@@ -1,4 +1,5 @@
 import Navbar from "../Navbar";
+import { LayoutWrapper } from "./style";
 
 type LayoutProps = {
     children: React.ReactNode;
@@ -6,10 +7,10 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
     return (
-        <>
+        <LayoutWrapper>
             <Navbar />
             {children}
-        </>
+        </LayoutWrapper>
     );
 };
 
